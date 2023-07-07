@@ -1,4 +1,8 @@
-#Eshop Project based on Clean architecture and Domain Driven Design  
+# Eshop Project based on Clean architecture and Domain Driven Design
+
+I have been involved in developing an eShop project that follows Clean Architecture principles and incorporates Domain-Driven Design (DDD) patterns. The project is built on .NET 7.0 and utilizes Microsoft SQL Server for data storage. It incorporates Entity Framework Core migrations for seamless database schema evolution.
+
+To ensure robustness and maintainability, the project employs the Command Query Responsibility Segregation (CQRS) pattern with segregated Commands and Queries. Fluent Validation is utilized within the Command classes to validate input data effectively. Additionally, the project includes authorization features through ASP.NET Core Identity, ensuring that only authorized users can access specific functionalities.
 
 ## Features
 
