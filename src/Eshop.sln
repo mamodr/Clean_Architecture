@@ -3,23 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Eshop\src\Application\Application.csproj", "{FED4C38A-DC5B-4349-89F2-639FBA75EB03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Eshop\src\Application\Application.csproj", "{FED4C38A-DC5B-4349-89F2-639FBA75EB03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Eshop\src\Domain\Domain.csproj", "{B9ACD921-ACE4-41AE-A999-D3B2F543F9C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Eshop\src\Domain\Domain.csproj", "{B9ACD921-ACE4-41AE-A999-D3B2F543F9C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Eshop\src\Infrastructure\Infrastructure.csproj", "{0BFFABCC-CE95-4449-AE5F-C89DE9CF1C55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Eshop\src\Infrastructure\Infrastructure.csproj", "{0BFFABCC-CE95-4449-AE5F-C89DE9CF1C55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebUI", "Eshop\src\WebUI\WebUI.csproj", "{EE2AD115-507B-4D5D-9205-C7CB464AEE77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebUI", "Eshop\src\WebUI\WebUI.csproj", "{EE2AD115-507B-4D5D-9205-C7CB464AEE77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "Eshop\TestProject1\TestProject1.csproj", "{57A3B448-1F57-4505-8423-EDB421E97346}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.IntegrationTests", "Eshop\tests\Application.IntegrationTests\Application.IntegrationTests.csproj", "{BCC349ED-98C4-4838-8185-BFE50C9FA3F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.IntegrationTests", "Eshop\tests\Application.IntegrationTests\Application.IntegrationTests.csproj", "{BCC349ED-98C4-4838-8185-BFE50C9FA3F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.UnitTests", "Eshop\tests\Application.UnitTests\Application.UnitTests.csproj", "{0BDD269A-674A-406A-87EE-EC7E23D075BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.UnitTests", "Eshop\tests\Application.UnitTests\Application.UnitTests.csproj", "{0BDD269A-674A-406A-87EE-EC7E23D075BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.UnitTests", "Eshop\tests\Domain.UnitTests\Domain.UnitTests.csproj", "{9F25BE89-A767-4DD2-B381-5FF644811577}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.UnitTests", "Eshop\tests\Domain.UnitTests\Domain.UnitTests.csproj", "{9F25BE89-A767-4DD2-B381-5FF644811577}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebUI.AcceptanceTests", "Eshop\tests\WebUI.AcceptanceTests\WebUI.AcceptanceTests.csproj", "{83369E6E-8D1E-4689-AB0B-E01B255AEAD6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebUI.AcceptanceTests", "Eshop\tests\WebUI.AcceptanceTests\WebUI.AcceptanceTests.csproj", "{83369E6E-8D1E-4689-AB0B-E01B255AEAD6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,10 +41,6 @@ Global
 		{EE2AD115-507B-4D5D-9205-C7CB464AEE77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE2AD115-507B-4D5D-9205-C7CB464AEE77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE2AD115-507B-4D5D-9205-C7CB464AEE77}.Release|Any CPU.Build.0 = Release|Any CPU
-		{57A3B448-1F57-4505-8423-EDB421E97346}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{57A3B448-1F57-4505-8423-EDB421E97346}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{57A3B448-1F57-4505-8423-EDB421E97346}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{57A3B448-1F57-4505-8423-EDB421E97346}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BCC349ED-98C4-4838-8185-BFE50C9FA3F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BCC349ED-98C4-4838-8185-BFE50C9FA3F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCC349ED-98C4-4838-8185-BFE50C9FA3F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
