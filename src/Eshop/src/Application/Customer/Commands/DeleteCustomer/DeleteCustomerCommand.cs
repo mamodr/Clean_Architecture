@@ -4,31 +4,31 @@ using Eshop.Domain.Entities;
 using Eshop.Domain.Events;
 using MediatR;
 
-namespace Eshop.Application.TodoItems.Commands.DeleteTodoItem;
-public record DeleteTodoItemCommand(int Id) : IRequest;
+namespace Eshop.Application.Customers.Commands.DeleteCustomer;
+public record DeleteCustomerCommand(int Id) : IRequest;
 
-public class DeleteTodoItemCommandHandler : IRequestHandler<DeleteTodoItemCommand>
+public class DeleteCustomerCommandHandler : IRequestHandler<DeleteCustomerCommand>
 {
     private readonly IApplicationDbContext _context;
 
-    public DeleteTodoItemCommandHandler(IApplicationDbContext context)
+    public DeleteCustomerCommandHandler(IApplicationDbContext context)
     {
         _context = context;
     }
 
-    public async Task<Unit> Handle(DeleteTodoItemCommand request, CancellationToken cancellationToken)
+    public async Task<Unit> Handle(DeleteCustomerCommand request, CancellationToken cancellationToken)
     {
-        var entity = await _context.TodoItems
+        var entity = await _context.Customers
             .FindAsync(new object[] { request.Id }, cancellationToken);
 
         if (entity == null)
         {
-            throw new NotFoundException(nameof(TodoItem), request.Id);
+            throw new NotFoundException(nameof(Customer), request.Id);
         }
 
-        _context.TodoItems.Remove(entity);
+        _context.Customers.Remove(entity);
 
-        entity.AddDomainEvent(new TodoItemDeletedEvent(entity));
+        //entity.AddDomainEvent(new CustomerDeletedEvent(entity));
 
         await _context.SaveChangesAsync(cancellationToken);
 

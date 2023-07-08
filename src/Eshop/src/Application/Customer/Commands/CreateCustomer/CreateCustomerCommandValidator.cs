@@ -1,12 +1,10 @@
 ﻿using FluentValidation;
 
-namespace Eshop.Application.TodoItems.Commands.CreateTodoItem;
-public class CreateTodoItemCommandValidator : AbstractValidator<CreateTodoItemCommand>
+namespace Eshop.Application.Customers.Commands.CreateCustomer;
+public class CreateCustomerCommandValidator : AbstractValidator<CreateCustomerCommand>
 {
-    public CreateTodoItemCommandValidator()
+    public CreateCustomerCommandValidator()
     {
-        RuleFor(v => v.Title)
-            .MaximumLength(200)
-            .NotEmpty();
+       
     }
 }

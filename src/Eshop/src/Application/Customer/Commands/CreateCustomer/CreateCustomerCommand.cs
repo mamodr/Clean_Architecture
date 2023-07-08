@@ -10,7 +10,9 @@ public record CreateCustomerCommand : IRequest<int>
 {
     public string CustomerId { get; init; }
 
-    public Address Address { get; init; }
+    public String Street { get; private set; }
+    public String City { get; private set; }
+    public String ZipCode { get; private set; }
 
 
     public string Phone { get; init; }
@@ -28,10 +30,12 @@ public class CreateCustomerCommandHandler : IRequestHandler<CreateCustomerComman
 
     public async Task<int> Handle(CreateCustomerCommand request, CancellationToken cancellationToken)
     {
+
+        var address = new Address(request.Street, request.City, request.ZipCode);
         var entity = new Customer
         {
            CustomerId=request.CustomerId,
-            Address=request.Address,
+            Address=address,
             Phone=request.Phone,
 
         };

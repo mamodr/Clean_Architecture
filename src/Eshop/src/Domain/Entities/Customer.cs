@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Eshop.Domain.Entities;
-public class Customer
+public class Customer:BaseAuditableEntity
 {
     public Customer()
     {

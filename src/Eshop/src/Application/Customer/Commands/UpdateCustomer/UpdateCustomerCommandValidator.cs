@@ -1,12 +1,10 @@
 ﻿using FluentValidation;
 
-namespace Eshop.Application.TodoItems.Commands.UpdateTodoItem;
-public class UpdateTodoItemCommandValidator : AbstractValidator<UpdateTodoItemCommand>
+namespace Eshop.Application.Customers.Commands.UpdateCustomer;
+public class UpdateCustomerCommandValidator : AbstractValidator<UpdateCustomerCommand>
 {
-    public UpdateTodoItemCommandValidator()
+    public UpdateCustomerCommandValidator()
     {
-        RuleFor(v => v.Title)
-            .MaximumLength(200)
-            .NotEmpty();
+        
     }
 }

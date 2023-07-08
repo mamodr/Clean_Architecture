@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -22,6 +24,7 @@ public class Order : BaseAuditableEntity
 
     public int? ShipVia { get; set; }
 
+    [NotMapped]
     public Address ShipAddress { get; set; }
 
     
