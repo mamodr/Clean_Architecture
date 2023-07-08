@@ -1,5 +1,9 @@
-﻿namespace WebUI.Controllers;
+﻿using Eshop.WebUI.Controllers;
 
-public class CustomerController
+namespace WebUI.Controllers;
+
+public class CustomerController:ApiControllerBase
 {
+
+
 }
