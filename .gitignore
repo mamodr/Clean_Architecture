@@ -363,5 +363,5 @@ MigrationBackup/
 FodyWeavers.xsd
 
 
-**/Application/TodoItems/
+**/Application/TodoItems/*
 src/Eshop/src/Application/TodoLists
