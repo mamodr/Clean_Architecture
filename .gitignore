@@ -362,6 +362,13 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 
-
+#ignored folders and files 
 
 src/Eshop/src/Application/TodoItems/
+src/Eshop/src/Application/TodoLists/
+***/WebUI/Controllers/TodoItemsController.cs
+***/WebUI/Controllers/TodoItemsController.cs
+***/WebUI/Controllers/WeatherForecastController.cs
+
+
+
