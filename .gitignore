@@ -366,6 +366,7 @@ FodyWeavers.xsd
 
 src/Eshop/src/Application/TodoItems/
 src/Eshop/src/Application/TodoLists/
+src/Eshop/src/Application/WeatherForecasts
 ***/WebUI/Controllers/TodoItemsController.cs
 ***/WebUI/Controllers/TodoItemsController.cs
 ***/WebUI/Controllers/WeatherForecastController.cs
